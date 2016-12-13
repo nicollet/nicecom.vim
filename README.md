@@ -1,5 +1,5 @@
 # nicecom.vim
-Simple comments, the way you want them
+Simple comments, the way you want them, only full lines.
 
 ## Install
 If you use pathogen:
@@ -21,7 +21,9 @@ endif
 
 ## Usage
 
-* To comment a line, press `cc`.
-* To uncomment a line, press `cu`.
-* To comment a region, press `v` then `cc`.
-* To uncomment a region, press `v` then `cu`.
+My leader key is space.
+
+* To comment a line, press `<space>cc`.
+* To uncomment a line, press `<space>cu`.
+* To comment a region, press `v` then `<space>cc`.
+* To uncomment a region, press `v` then `<space>cu`.
