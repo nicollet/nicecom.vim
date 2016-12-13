@@ -7,10 +7,10 @@
 " Add this to your .vimrc (or similar):
 " comment the current line/region
 " if &runtimepath =~ 'nicecom'
-" 	vnoremap <silent> <Leader>cc :Comment<cr>
-" 	vnoremap <silent> <Leader>cu :Uncomment<cr>
-" 	nnoremap <silent> <Leader>cc :Comment<cr>
-" 	nnoremap <silent> <Leader>cu :Uncomment<cr>
+" 	vnoremap <silent> <Leader>cc :NiceComment<cr>
+" 	vnoremap <silent> <Leader>cu :NiceUncomment<cr>
+" 	nnoremap <silent> <Leader>cc :NiceComment<cr>
+" 	nnoremap <silent> <Leader>cu :NiceUncomment<cr>
 " endif
 
 if exists('g:loaded_nicecom') || &compatible
