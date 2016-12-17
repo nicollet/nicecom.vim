@@ -1,0 +1,46 @@
+*nice-com*
+
+CONTENTS                                                   *nice-com-contents*
+
+ 1. Intro.........................................|nice-com-intro|
+ 2. Install.......................................|nice-com-install|
+ 3. Usage.........................................|nice-com-usage|
+
+==============================================================================
+INTRO                                                         *nice-com-intro*
+
+Nice-comments helps you comment single lines of code easily
+
+==============================================================================
+INSTALL                                                     *nice-com-install*
+
+Nice=comments follows the standard runtime path structure.
+
+With Pathogen (bundle), just clone the repo in `.vim/bundle`:
+
+*  https://github.com/tpope/vim-pathogen >
+ git clone https://github.com/nicollet/nicom.vim.git ~/.vim/bundle/nicecom.vim
+
+==============================================================================
+USAGE                                                       *nice-com-usage*
+
+First add this to your .vimrc:
+>
+    " comment the current line/region
+    if &runtimepath =~ 'nicecom'
+        vnoremap <silent> <Leader>cc :NiceComment<cr>
+        vnoremap <silent> <Leader>cu :NiceUncomment<cr>
+        nnoremap <silent> <Leader>cc :NiceComment<cr>
+        nnoremap <silent> <Leader>cu :NiceUncomment<cr>
+    endif
+<
+
+Assuming your |<Leader>| key is <space>:
+
+* Press `<space>cc` to comment the current line.
+* Press `<space>cu` to uncomment the current line.
+
+You can use a region, like a selection, using `v` and then use
+the same keys to comment/uncomment a whole block of text.
+
+vim:ft=help:et:ts=2:sw=2
