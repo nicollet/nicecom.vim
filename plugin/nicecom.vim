@@ -26,7 +26,8 @@ endif
 let g:nice_comment_type = {
 	\ 'vim': '"',
 	\ 'sh': '#',
-	\ 'python': '#'
+	\ 'python': '#',
+	\ 'ruby': '#'
 	\ }
 
 " Return the comment characters (default '//')
