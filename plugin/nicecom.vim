@@ -27,7 +27,8 @@ let g:nice_comment_type = {
 	\ 'vim': '"',
 	\ 'sh': '#',
 	\ 'python': '#',
-	\ 'ruby': '#'
+	\ 'ruby': '#',
+	\ 'puppet': '#'
 	\ }
 
 " Return the comment characters (default '//')
